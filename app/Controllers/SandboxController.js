@@ -33,9 +33,14 @@ export class SandboxController {
     }
 
     drawGifts() {
+        console.log('hitting controller draw');
         let template = ''
 
-        ProxyState.gifts.forEach(g => template += g.Template);
+        ProxyState.gifts.forEach(g => {
+            template += g.Template
+            // console.log(g, 'this is what g is in the draw loop');
+
+        });
         document.getElementById("sandbox-results").innerHTML = template
     }
 

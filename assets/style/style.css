@@ -5,3 +5,8 @@
 
     width: 300px;
 }
+
+.gift-images{
+    object-fit: cover;
+    max-width: 25vh;
+}
