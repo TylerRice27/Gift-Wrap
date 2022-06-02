@@ -12,6 +12,8 @@ class AppState extends EventEmitter {
 
   giphyResults = []
 
+  clickedImgUrl = ''
+
 }
 
 export const ProxyState = new Proxy(new AppState(), {

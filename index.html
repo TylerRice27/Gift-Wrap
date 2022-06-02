@@ -40,8 +40,8 @@
                 alt=""> -->
             </div>
             <p>Add a Tag Here!</p>
-            <form action="">
-              <input required maxlength="120" type=" text">
+            <form onsubmit="app.sandboxController.createGift()" action="">
+              <input required maxlength="120" type=" text" name="tag" id="tag">
               <button class="btn btn-primary">Submit!</button>
             </form>
           </div>
@@ -56,22 +56,23 @@
           <!-- <button data-bs-toggle="modal" data-bs-target="#submit-modal" onclick="" class="btn btn-danger">Toggle Modal
             For Testing</button> -->
 
-          <h1>Giph Search</h1>
+          <h1>Gif Search</h1>
           <form onsubmit="app.giphyController.getGiphs()">
             <input required name="search" id="search" type="text">
             <button class="btn btn-primary">Search </button>
           </form>
           <div class="m-3" id="results">
-            <img class="img-fluid"
-              src="https://media0.giphy.com/media/yy6hXyy2DsM5W/giphy-downsized.gif?cid=efc26ac5nuse2vnyu2p411fgrdn2itnu9xbp416kg03arvcu&rid=giphy-downsized.gif&ct=g"
-              alt="">
+
           </div>
 
         </div>
         <div class="col-md-8">
           <div id="sandbox-results"></div>
 
-
+          <!-- <div>
+            <img class="img-flex" src="" alt="">
+            <h4>Placeholder tag</h4>
+          </div> -->
         </div>
       </div>
     </div>

@@ -37,11 +37,10 @@ class GiphyService {
 
     }
 
-
-
-
-
-
+    updateClicked(url) {
+        ProxyState.clickedImgUrl = url
+        console.log('this is the new clicked img url', ProxyState.clickedImgUrl);
+    }
 
 }
 

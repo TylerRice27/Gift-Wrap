@@ -62,7 +62,8 @@ export class GiphyController {
         document.getElementById("modal-img").innerHTML = `<img class="modal-images"
                 src="${url}"
                 alt="">`
-
+        giphyService.updateClicked(url)
+        console.log('passing URL from giphyController', url);
 
     }
 
